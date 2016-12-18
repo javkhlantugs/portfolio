@@ -1,0 +1,51 @@
+// Place all the styles related to the site controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.avatar {
+	height: 150px;
+	position: relative;
+	vertical-align: top;
+	display: inline-block;	
+	margin: 0 55px;
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.avatar:hover {
+	-webkit-filter: grayscale(70%) blur(2px);
+	filter: grayscale(100%) blur(2px);
+}
+
+.my-container {
+	background-image: url("/assets/nebula.jpg");
+
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.about {
+	position: relative;
+	top: 49px;
+	text-align: center;
+
+}
+
+.about-me {
+	text-align: right;
+}
+
+.about-you {
+	vertical-align: top;
+	text-align: left;
+}
+
+.about-me, .about-you {
+	color: white;
+	width: 350px;
+	display: inline-block;
+}
