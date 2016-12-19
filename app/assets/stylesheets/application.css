@@ -14,10 +14,10 @@
  *= require_self
  */
 
-/*fonts "Julius Sans One" "Text Me One"*/
+/*fonts "Josefin Sans" "Khula"*/
 
 html, body {
 	height: 100%;
-	font-family: 'Text Me One', sans-serif !important; 
+	font-family: 'Josefin Sans', sans-serif !important; 
 }
 
