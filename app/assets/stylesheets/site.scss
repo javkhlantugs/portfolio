@@ -58,6 +58,7 @@
 .title-up {
 	margin-top: 21px;
 	transition: all 0.4s;
+	margin-bottom: 0;	
 }
 .title-center {
 	margin-top: 88px;
@@ -118,7 +119,7 @@
 	background-color: rgba(112, 128, 144, 0.1)
 }
 
-.the-row div{
+.the-row > div{
 	background-color: white;
 	height: 100%;
 	width: 33.3%;
@@ -144,7 +145,7 @@
 
 .education-row div {
 	position: relative;
-	left: 33.3%;
+	display: inline-block;
 }
 
 .experience-row div {
@@ -155,3 +156,81 @@
 
 
 // see container ends
+
+//	developer cards
+
+.developer-seeno {
+}
+
+.developer-card {
+	margin-left: 25px !important;
+	margin-right: 25px !important;
+	text-align: left !important;
+	width: 250px;
+	display: inline-block;
+	height: 250px;
+	vertical-align: top;
+}
+
+.developer-items-inactive {
+	display: none;
+}
+
+
+
+// developer cards end
+
+
+// designer cards
+.designer-items-inactive {
+	display: none;
+}
+
+
+.material-placeholder {
+	display: inline-block;
+}
+.logo-seeno.logos-items{
+	height: 25px;
+	position: relative;
+	top: 26px;
+
+}
+.logos-title{
+
+	width: 102px;
+	border: #e1e1e1 solid 1px;
+	color: white;
+	margin: 0 0 11px 42%;
+}
+
+.seeno-card {
+	height: 89px;
+	vertical-align: top;
+}
+.logos-items {
+	height: 70px;
+}
+//designer cards end
+
+//======================
+
+//education row
+
+.education-row span {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width: 33%;
+	color: white;
+}
+
+.education-title {
+	vertical-align: top;
+}
+
+.education-row span h5 {
+	margin-top: 25px;
+}
+//education row ends
+
