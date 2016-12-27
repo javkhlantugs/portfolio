@@ -105,7 +105,7 @@
 
 // see container
 .see-container{
-	height: 100%;
+	height: 150%;
 	background-image:url("nature.jpg");
 	background-position: center;
 	background-size: cover;
@@ -127,7 +127,7 @@
 .the-row div h3 {
 	margin:0 ;
 	position: relative;
-	top: 36%;
+	top: 40%;
 }
 .skills-row {
 	background-color: rgba(112, 128, 144, 0.3);
@@ -154,7 +154,8 @@
 
 .experience-row div {
 	position: relative;
-	left: 66.6%;
+	display: inline-block;
+	vertical-align: top;
 }
 
 	//education row
@@ -187,7 +188,7 @@
 	opacity: 0.8;
 }
 .backend-graph {
-	height:75%;
+	height:59%;
 	z-index: 10;
 	position: relative;
 }
@@ -203,6 +204,25 @@
 .frontend-graph {
 	height:85%;
 }
+
+	// skills row ends
+
+	// experience row
+.timeline-container {
+	width: 66%;
+	display:inline-block;
+	height: 100%;
+	position:relative;
+}
+.timeline-image{
+	width: 85%;
+	position: absolute;
+	bottom: 9px;
+	right: 6%
+}
+
+	// experience row ends
+
 
 // see container ends
 
