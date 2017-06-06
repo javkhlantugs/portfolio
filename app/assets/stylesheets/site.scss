@@ -2,11 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .avatar {
-	height: 150px;
-	position: relative;
-	vertical-align: top;
-	display: inline-block;	
-	margin: 0 55px;
+	width: 100%;
 	-webkit-filter: grayscale(0) blur(0);
 	filter: grayscale(0) blur(0);
 	-webkit-transition: .2s ease-in-out;
@@ -28,12 +24,6 @@
 	background-size: cover;
 }
 
-.about {
-	position: relative;
-	top: 49px;
-	text-align: center;
-
-}
 
 
 .portfolio-container {
@@ -93,14 +83,11 @@
 }
 
 .about-you {
-	vertical-align: top;
 	text-align: left;
 }
 
 .about-me, .about-you {
 	color: white;
-	width: 350px;
-	display: inline-block;
 }
 
 // see container
