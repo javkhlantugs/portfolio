@@ -1,276 +1,118 @@
 // Place all the styles related to the site controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.avatar {
-	width: 100%;
-	-webkit-filter: grayscale(0) blur(0);
-	filter: grayscale(0) blur(0);
-	-webkit-transition: .2s ease-in-out;
-	transition: .2s ease-in-out;
-}
 
-.avatar:hover {
-	-webkit-filter: grayscale(70%) blur(2px);
-	filter: grayscale(100%) blur(2px);
-}
-
-.my-container {
+html,
+body {
+	height: 100%;
 	background-image: url("/assets/nature.jpg");
-
-	height: 65%;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+button:focus, button:active {outline:0 !important;}
 
+// About me section START
 
+.my-container {
+	background-image: url("/assets/nature.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.avatar {
+	width: auto;
+	max-height: 120px;
+	margin: auto;
+	display: block;
+}
+.position-relative{
+	height: 100%;
+	position: relative;
+}
 
+.about {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+// About me ends ENDEND
+
+// portfolio container section START
 .portfolio-container {
 	width: 100%;
+	padding: 0 !important;
+	position: relative;
 }
 
-.developer-window{
-		float: left;
-		text-align: center;
-		width: 50%;
-		height: 240px;
-		border: 13px solid #fbf7f5;
-
-}
-.developer-window h1, .designer-window h1 {
-    display: inline-block;
-	font-family: 'Khula', sans-serif !important;
-
-}
-
-.title-up {
-	margin-top: 21px;
-	transition: all 0.4s;
-	margin-bottom: 0;	
-}
-.title-center {
-	margin-top: 88px;
-	transition: all 0.4s;
-}
-
-
-.designer-window {
-	float: right;
-	text-align: center;
+.developer-window-inactive, .designer-window-inactive{
 	width: 50%;
-	border: 13px solid white;
-	background-image: url("/assets/202.JPG");
-	background-position: center;
-	background-size: cover;
-	background-attachment: scroll;
-	height: 100%;
+	transition: all 0.4s;
 }
 
-.window-inactive{
-	height: 240px;
-	transition:all 0.7s;
-
-}
-.window-active {
-	height: 480px;
-	transition:all 0.7s;
-}
-
-
-.about-me {
-	text-align: right;
-}
-
-.about-you {
-	text-align: left;
-}
-
-.about-me, .about-you {
-	color: white;
-}
-
-// see container
-.see-container{
-	height: 150%;
-	background-image:url("nature.jpg");
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
-}
-.the-row{
-	height: 33.3%;
-}
-.the-row:hover {
-	background-color: rgba(112, 128, 144, 0.1)
-}
-
-.the-row > div{
-	background-color: white;
-	height: 100%;
-	width: 33.3%;
-	text-align: center;
-}
-.the-row div h3 {
-	margin:0 ;
-	position: relative;
-	top: 40%;
-}
-.skills-row {
-	background-color: rgba(112, 128, 144, 0.3);
-	transition: 0.2s;
-}
-
-.skills-row div {
+.designer-window, .developer-window, .developer-window-inactive, .designer-window-inactive, .developer-min, .designer-min {
 	display: inline-block;
-	vertical-align: top;
-}
-.education-row {
-	background-color: rgba(112, 128, 144, 0.3);
-	transition: 0.2s;
-}
-.experience-row {
-	background-color: rgba(112, 128, 144, 0.3);
-	transition: 0.2s;
-}
-
-.education-row div {
-	position: relative;
-	display: inline-block;
-}
-
-.experience-row div {
-	position: relative;
-	display: inline-block;
-	vertical-align: top;
-}
-
-	//education row
-
-.education-row span {
-	display: inline-block;
-	vertical-align: middle;
-	text-align: center;
-	width: 33%;
-	color: white;
-}
-
-.education-title {
-	vertical-align: top;
-}
-
-.education-row span h5 {
-	margin-top: 25px;
-}
-	//education row ends
-
-
-	// skills row
-.backend-header{
-	text-align:center;
-}
-.backend-container, .frontend-container {
-	filter: grayscale(100%);
-	transition: all .2s;
-	opacity: 0.8;
-}
-.backend-graph {
-	height:59%;
-	z-index: 10;
-	position: relative;
-}
-
-.backend-container:hover, .frontend-container:hover {
-	filter: grayscale(0);
-	opacity: 1;
-	transition: all .2s;
-}
-.frontend-container {
-	width: 32% !important;
-}
-.frontend-graph {
-	height:85%;
-}
-
-	// skills row ends
-
-	// experience row
-.timeline-container {
-	width: 66%;
-	display:inline-block;
-	height: 100%;
-	position:relative;
-}
-.timeline-image{
-	width: 85%;
 	position: absolute;
-	bottom: 9px;
-	right: 6%
 }
 
-	// experience row ends
-
-
-// see container ends
-
-//	developer cards
-
-
-.developer-seeno {
+.developer-window {
+	width: 80%;
+	transition: all 0.4s;
 }
 
-.developer-card {
-	margin-left: 25px !important;
-	margin-right: 25px !important;
-	text-align: left !important;
-	width: 250px;
-	display: inline-block;
-	height: 250px;
-	vertical-align: top;
+.developer-min {
+	width: 20%;
+	transition: all 0.4s;
 }
 
-.developer-items-inactive {
-	display: none;
+.designer-min {
+	width: 20%;
+	transition: all 0.4s;
+}
+.designer-window {
+	width: 80%;
+	transition: all 0.4s;
+}
+.designer-window-inactive, .designer-window, .designer-min {
+	right: 0;
 }
 
-
-
-// developer cards end
-
-
-// designer cards
-.designer-items-inactive {
-	display: none;
+.inner-border {
+	margin: 5px;
+	border: 1px solid black;
+	height: 96%;
 }
 
-
-.material-placeholder {
-	display: inline-block;
-}
-.logo-seeno.logos-items{
-	height: 25px;
-	position: relative;
-	top: 26px;
-
-}
-.logos-title{
-
-	width: 102px;
-	border: #e1e1e1 solid 1px;
-	color: white;
-	margin: 0 0 11px 42%;
+@media only screen and (max-width: 768px) {
+	.developer-window, .designer-window, .developer-window-inactive, .designer-window-inactive {
+		width: 100%;
+		position: static;
+	}
 }
 
-.seeno-card {
-	height: 89px;
-	vertical-align: top;
+.portfolio-title {
+	border-radius: 0;
+	background: none !important;
+	padding: 12px 22px;
+	border: 1px solid black;
+	color: black;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
-.logos-items {
-	height: 70px;
+
+.portfolio-title:hover, .portfolio-title:focus, .portfolio-title:active, .portfolio-title.active, .open > .dropdown-toggle.portfolio-title {
+	color: black !important;
+	border-color: black !important;
 }
-//designer cards end
+.portfolio-title:active, .portfolio-title.active {
+	border-color: #007299 !important;
+	color: black !important;
+	box-shadow: none !important;
+}
 
-//======================
-
-
-
+.window-active {
+	height: 500px !important;
+}

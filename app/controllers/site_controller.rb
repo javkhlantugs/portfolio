@@ -4,5 +4,4 @@ class SiteController < ApplicationController
 		render :home
 	end
 
-
 end
