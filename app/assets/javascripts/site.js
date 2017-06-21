@@ -4,6 +4,7 @@ $(document).on('turbolinks:load', function() {
 	$('.window-inactive').css('height', windowsHeight() * 0.4);
 	$('.developer-button').on('click', adjustWidthDev);
 	$('.designer-button').on('click', adjustWidthDes);
+	$('#skills-education').css('height', adjustHeightSkillsEd);
 });
 
 
@@ -75,4 +76,12 @@ function checkDesignerMin() {
 }
 function checkDeveloperMin() {
 	return $('.js-developer').hasClass('developer-min');
+}
+
+// adjustHeightSkillsEd
+
+function adjustHeightSkillsEd() {
+	if (windowsHeight() > 768) {
+		return windowsHeight()
+	}
 }
