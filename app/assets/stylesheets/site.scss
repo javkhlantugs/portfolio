@@ -46,6 +46,7 @@ button:focus, button:active {outline:0 !important;}
 	width: 100%;
 	padding: 0 !important;
 	position: relative;
+	transition: all 0.3s;
 }
 
 .developer-window-inactive, .designer-window-inactive{

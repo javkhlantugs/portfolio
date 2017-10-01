@@ -2,11 +2,12 @@ $(document).on('turbolinks:load', function() {
 	$('.my-container').css('height', minimumHeight());
 	$('.avatar-container').css('height', aboutHeight());
 	$('.window-inactive').css('height', windowsHeight() * 0.4);
-	$('.developer-button').on('click', adjustWidthDev);
+	$('.developer-button').on('click', adjustWidthDev	);
 	$('.designer-button').on('click', adjustWidthDes);
 	$('#skills-education').css('height', adjustHeightSkillsEd);
-});
+	$(window).load(porConHei());
 
+});
 
 // windows height
 var windowsHeight = function () {
@@ -45,6 +46,8 @@ function adjustWidthDev() {
 		$('.js-developer').toggleClass('window-active window-inactive developer-window developer-window-inactive');
 		$('.js-designer').toggleClass('window-active window-inactive designer-min designer-window-inactive');
 	}
+
+	setTimeout(porConHei(), 5000);
 }
 
 function adjustWidthDes() {
@@ -84,4 +87,12 @@ function adjustHeightSkillsEd() {
 	if (windowsHeight() > 768) {
 		return windowsHeight()
 	}
+}
+
+// portfolio container height
+
+function porConHei() {
+	var h = $('.js-developer').height();
+	console.log(h);
+	$('.portfolio-container').css('height', h)
 }
